@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Set Roboto font and smaller font size */
+body, table {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+/* Borders on all cells */
+td, th {
+  border: 1px solid #ccc;
+  padding: 3px 6px;
+  white-space: nowrap; /* prevent wrapping */
+  text-align: center;
+}
+
+input[type="number"] {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  border-radius: 4px;
+  padding: 0;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+
+  appearance: none;          /* Standard */
+  -webkit-appearance: none;  /* Chrome, Safari, Edge */
+  -moz-appearance: none;     /* Firefox */
+}
+
+/* Remove spin buttons in number inputs for Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Focus effect on inputs */
+input[type="number"]:focus {
+  outline: none;
+  border-color: #3b82f6; /* blue */
+  box-shadow: 0 0 3px 1px #3b82f6;
+}
+
+/* Hover effect on table rows */
+tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Alternate row shading for fixtures */
+.fixtures-table tr:nth-child(odd) {
+  background-color: #f5f7fa;
+}
