@@ -4,8 +4,8 @@ import teamLogos from "./data/teamLogos"; // adjust path if needed
 const leagues = {
   premierleague: {
     name: "Premier League",
-    fixturesFile: "/premierleague-fixtures.json",
-    teamsFile: "/premierleague-teams.csv",
+    fixturesFile: "/public/premierleague-fixtures.json",
+    teamsFile: "/public/premierleague-teams.csv",
     rounds: 38,
   },
   championship: {
